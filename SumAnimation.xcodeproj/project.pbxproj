@@ -14,6 +14,7 @@
 		3A44FA3F297450880090595A /* SumAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A44FA3E297450880090595A /* SumAnimationTests.swift */; };
 		3A44FA49297450880090595A /* SumAnimationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A44FA48297450880090595A /* SumAnimationUITests.swift */; };
 		3A44FA4B297450880090595A /* SumAnimationUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A44FA4A297450880090595A /* SumAnimationUITestsLaunchTests.swift */; };
+		3AC9CE682977141C0055B4CE /* TextAnimatableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC9CE672977141C0055B4CE /* TextAnimatableValue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		3A44FA44297450880090595A /* SumAnimationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SumAnimationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A44FA48297450880090595A /* SumAnimationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumAnimationUITests.swift; sourceTree = "<group>"; };
 		3A44FA4A297450880090595A /* SumAnimationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SumAnimationUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3AC9CE672977141C0055B4CE /* TextAnimatableValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAnimatableValue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				3A44FA2F297450860090595A /* ContentView.swift */,
 				3A44FA31297450880090595A /* Assets.xcassets */,
 				3A44FA33297450880090595A /* Preview Content */,
+				3AC9CE672977141C0055B4CE /* TextAnimatableValue.swift */,
 			);
 			path = SumAnimation;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				3A44FA30297450860090595A /* ContentView.swift in Sources */,
 				3A44FA2E297450860090595A /* SumAnimationApp.swift in Sources */,
+				3AC9CE682977141C0055B4CE /* TextAnimatableValue.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

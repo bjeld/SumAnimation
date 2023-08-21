@@ -1,21 +1,62 @@
-//
-//  ContentView.swift
-//  SumAnimation
-//
-//  Created by Martin Bjeld on 15/01/2023.
-//
-
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View, Animatable {
+    @State var sum: Double = 0;
+    
+    private var formatter: NumberFormatter {
+       let formatter = NumberFormatter()
+       formatter.numberStyle = .currency
+       formatter.locale = Locale(identifier: "en_US")
+       return formatter
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ZStack {
+            TextAnimatableValue(value: sum, formatter: formatter)
+               .font(.largeTitle)
+               .fontWeight(.heavy)
+               .monospacedDigit()
+            
+            VStack {
+               Spacer()
+               HStack() {
+                  Button(action: {
+                     withAnimation(Animation.easeInOut(duration: 1)) {
+                           sum -= 1000
+                     }
+                  }) {
+                     Image(systemName: "minus.circle.fill")
+                           .font(.system(size: 50))
+                           .foregroundColor(.black)
+                  }
+                  
+                  Spacer()
+                  
+                  Button(action: {
+                     withAnimation(Animation.easeInOut(duration: 1)) {
+                           sum = 0
+                     }
+                  }) {
+                     Image(systemName: "xmark.circle.fill")
+                           .font(.title)
+                           .foregroundColor(.black)
+                  }
+                  
+                  Spacer()
+                  
+                  Button(action: {
+                     withAnimation(Animation.easeInOut(duration: 1)) {
+                           sum += 1000
+                     }
+                  }) {
+                     Image(systemName: "plus.circle.fill")
+                           .font(.system(size: 50))
+                           .foregroundColor(.black)
+                  }
+               }
+            }.padding(40)
+                
         }
-        .padding()
     }
 }
 

@@ -1,10 +1,3 @@
-//
-//  SumAnimationApp.swift
-//  SumAnimation
-//
-//  Created by Martin Bjeld on 15/01/2023.
-//
-
 import SwiftUI
 
 @main
